@@ -1,0 +1,82 @@
+.success-container {
+    background-color: #2E2E2E; /* ✅ Fond gris foncé élégant */
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ✅ Barre du haut avec le menu et le logo */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 10px 20px;
+}
+
+/* ✅ Style du logo en haut à gauche */
+.logo {
+    height: 50px; /* ✅ Taille réduite */
+}
+
+/* ✅ Menu aligné à droite */
+.menu {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 3rem;
+}
+
+.menu button {
+    padding: 10px 15px;
+    background-color: #4A4A4A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: #2E2E2E;
+}
+
+/* ✅ Titre aligné à droite */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; /* ✅ Aligné à droite */
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+/* ✅ Tableau bien structuré */
+.etudiants-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.etudiants-table th {
+    background-color: #4A90E2;
+    color: white;
+    padding: 12px;
+}
+
+.etudiants-table td {
+    background-color: #F4F4F4;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #DDD;
+}
+
+.etudiants-table tr:hover {
+    background-color: #E0E0E0;
+}
+.etudiants-table button {
+  margin-right: 8px; /* espace à droite de chaque bouton */
+}
+

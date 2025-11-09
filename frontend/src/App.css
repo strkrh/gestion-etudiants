@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34; /* Fond sombre */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white; /* Texte général en blanc */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Ajout : Styles spécifiques pour les champs email et mot de passe */
+input {
+  font-size: 16px;
+  background-color: white !important;
+  color: black;
+  padding: 20px;
+  width: 350px;
+}
+
+/* Ajout : Styles pour les boutons */
+button {
+  color: white !important;
+  background-color: gray;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: darkgray;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.buttons-row {
+  display: flex;
+  gap: 20px;           /* espace entre les boutons */
+  justify-content: center; /* centre les boutons horizontalement */
+  margin-top: 20px;    /* espace au-dessus */
+}
+
+/*.login-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url('/fond.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}*/

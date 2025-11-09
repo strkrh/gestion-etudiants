@@ -1,0 +1,124 @@
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Tout est centré par défaut */
+    text-align: center;
+    background-color: #2E2E2E;
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.user-info-container {
+  width: 500px;
+  padding: 35px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 20px 20px 20px rgba(219, 219, 219, 0.1);
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  text-align: left; /* Texte aligné à gauche dans le carré */
+  margin-left: 50px;
+}
+
+.container-ligne {
+  display: flex;
+  justify-content: center; /* ou space-between / space-around */
+  align-items: center; /* pour les aligner en haut */
+  margin-top: 50px;
+  gap: 40px; /* espace entre les deux */
+}
+
+
+
+.title {
+    font-size: 28px;
+    margin-bottom: 20px;
+      width: 100%;
+}
+input {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.back-button {
+    padding: 10px 15px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+.user-info-container-modif {
+  width: 500px;
+  padding: 35px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 20px 20px 20px rgba(219, 219, 219, 0.1);
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+
+
+
+.user-info-container p {
+  font-size: 16px;
+  color: #333;
+  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.container-ligne.modification-active .user-info-container-modif {
+  display: block;
+}
+.user-info-container-modif label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+}
+
+.user-info-container-modif input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.user-info-container-modif button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Espace entre les deux boutons */
+.user-info-container-modif button + button {
+  margin-left: 15px;
+}
+
+.password-update-form {
+  margin-top: 20px;
+}
+
+.password-update-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.password-update-form button {
+  margin-right: 10px;
+}

@@ -1,0 +1,93 @@
+.success-container-inscrip {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.title-inscrip {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.form-inscrip {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-inscrip label {
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.form-inscrip input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.inscrip-button {
+  margin-top: 25px;
+  padding: 12px 20px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.inscrip-button:hover {
+  background-color: #0056b3;
+}
+
+/* Barre du haut */
+.header-inscrip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.back-button-inscrip {
+  background-color: #888;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-button-inscrip:hover {
+  background-color: #555;
+}
+.buttons-row-i {
+  display: flex;
+  gap: 20px;           /* espace entre les boutons */
+  justify-content: center; /* centre les boutons horizontalement */
+  margin-top: 20px;    /* espace au-dessus */
+}
+.inscrip-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* ✅ remplace height par min-height */
+  background-color: #282c34;
+  padding: 20px; /* ✅ pour éviter le bord collé */
+  overflow-y: auto; /* ✅ au cas où le contenu dépasse */
+}
+

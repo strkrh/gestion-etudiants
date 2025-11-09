@@ -1,0 +1,1 @@
+{"root":["./src/app.test.tsx","./src/app.tsx","./src/index.tsx","./src/react-app-env.d.ts","./src/reportwebvitals.ts","./src/setuptests.ts","./src/api/studentapi.ts","./src/pages/studentform.tsx","./src/pages/studentlist.tsx"],"version":"5.8.3"}

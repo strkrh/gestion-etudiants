@@ -1,0 +1,98 @@
+.form-container-m {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #4A4A4A;
+    border-radius: 8px;
+    width: 90%; /* occupe 90% de l’espace disponible */
+    max-width: 900px;
+
+    max-width: 900px;  /* mais pas plus large que 500px */
+    box-sizing: border-box; /* pour prendre en compte padding dans la largeur */
+    text-align: center;
+}
+.button-container-m {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.button-container-m button {
+    min-width: 120px; /* Définit une largeur minimale pour les boutons */
+    margin-left: 0px; /* Ajoute un espace à gauche */
+    margin-right: 0px; /* Ajoute un espace à droite */
+}
+
+.form-container-m input {
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+.form-container-m button {
+    padding: 10px 5px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.form-container-m button:hover {
+    background-color: #0056b3;
+}
+
+.message-m {
+    margin-top: 10px;
+    color: #33075a;
+    font-size: 18px;
+    font-weight: bold;
+}
+.success-container-m {
+    background-color: #2E2E2E; /* ✅ Fond gris foncé élégant */
+    color: white;
+    padding: 20px;
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ✅ Barre du haut avec le menu et le logo */
+.header-m {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+/* ✅ Style du logo en haut à gauche */
+.logo {
+    height: 50px; /* ✅ Taille réduite */
+}
+.menu-m {
+    display: flex;
+    gap: 15px;
+}
+.menu-m button {
+    padding: 10px 15px;
+    background-color: #4A4A4A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu-m button:hover {
+    background-color: #2E2E2E;
+}

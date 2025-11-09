@@ -1,0 +1,83 @@
+.form-container-ajout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #4A4A4A;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 90%;        /* occupe 90% de l’espace disponible */
+    max-width: 500px;  /* mais pas plus large que 500px */
+    box-sizing: border-box; /* pour prendre en compte padding dans la largeur */
+}
+
+
+.form-container-ajout input {
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 90%;
+}
+
+.form-container-ajout button {
+    padding: 20px 25px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.form-container-ajout button:hover {
+    transform: scale(1.05); /* Effet d'agrandissement au survol */
+    background: linear-gradient(135deg, #b5c8df, #33075a);
+}
+
+.message-ajout {
+    margin-top: 60px;
+    color: #33075a;
+    font-size: 18px;
+    font-weight: bold;
+}
+.success-container-ajout {
+    background-color: #2E2E2E; /* ✅ Fond gris foncé élégant */
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ✅ Barre du haut avec le menu et le logo */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 10px 20px;
+}
+
+/* ✅ Style du logo en haut à gauche */
+.logo {
+    height: 50px; /* ✅ Taille réduite */
+}
+.menu {
+    display: flex;
+    gap: 15px;
+}
+.menu button {
+    padding: 10px 15px;
+    background-color: #4A4A4A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: #2E2E2E;
+}
