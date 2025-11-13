@@ -21,8 +21,14 @@ const Inscription = () => {
         };
     }, []);
 
-   const handleSubmit = async () => {
+ const handleSubmit = async () => {
   console.log("Envoi du formulaire :", profil);
+
+  // ✅ Vérifier les champs avant envoi
+  if (!profil.nom || !profil.prenom || !profil.email || !profil.password || !profil.domaine) {
+    alert("⚠️ Tous les champs sont obligatoires !");
+    return;
+  }
 
   try {
     const response = await fetch("https://gestion-etudiants-6.onrender.com/register", {
@@ -33,27 +39,30 @@ const Inscription = () => {
       body: JSON.stringify(profil),
     });
 
-    const data = await response.json();
-
+    // ✅ Si erreur, lire le texte brut pour éviter JSON parse error
     if (!response.ok) {
-      console.error("❌ Erreur du serveur :", data);
-      alert(data.message || "Erreur lors de l'inscription");
+      const text = await response.text();
+      console.error("❌ Erreur serveur :", text);
+      alert("Erreur serveur : " + text);
       return;
     }
 
+    // ✅ Si tout va bien, lire le JSON
+    const data = await response.json();
     console.log("✅ Réponse du serveur :", data);
 
-    if (data.message === "✅ Inscription réussie") {
-      // rediriger vers la page de login par exemple :
+    if (data.message === "✅ Inscription réussie" || data.message.includes("succès")) {
       navigate("/login");
     } else {
       alert(data.message || "Une erreur est survenue");
     }
+
   } catch (error) {
     console.error("❌ Erreur réseau ou autre :", error);
     alert("Erreur réseau ou serveur");
   }
 };
+
 
 
     return (
