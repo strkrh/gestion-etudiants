@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import logo from '../logo.svg';
 import "../styles/ajoutuser.css"; 
+const API_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
 
 const Ajoutuser = () => {
     const navigate = useNavigate();

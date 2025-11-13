@@ -4,7 +4,7 @@ import logo from '../logo.svg'; // ✅ Assure-toi que le chemin est correct
 import "../App.css";
 import fond from '../asset/fond.jpg';
 
-const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:5000";
+const API_BASE = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -23,7 +23,7 @@ const handleLogin = async () => {
     console.log("🔹 Password :", password);
 
     try {
-        const response = await fetch("https://gestion-etudiants-6.onrender.com/", {
+        const response = await fetch("${API_BASE}/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, password }),
