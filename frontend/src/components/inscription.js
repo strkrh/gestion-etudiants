@@ -25,7 +25,7 @@ const Inscription = () => {
   console.log("Envoi du formulaire :", profil);
 
   try {
-    const response = await fetch("http://localhost:5000/register", {
+    const response = await fetch("https://gestion-etudiants-6.onrender.com/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

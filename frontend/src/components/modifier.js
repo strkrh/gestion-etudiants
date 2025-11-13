@@ -25,7 +25,7 @@ const Modifier = () => {
             try {
                 // Correction: backend ne filtre pas directement sur profId par query param,
                 // donc on envoie une requête GET simple et on filtre côté frontend (ou backend à modifier)
-                const response = await fetch(`http://localhost:5000/etudiants?profId=${profId}`);
+                const response = await fetch(`${API_URL}/etudiants?profId=${profId}`);
 
                 if (!response.ok) throw new Error("Erreur lors du chargement des étudiants");
                 const data = await response.json();
@@ -55,7 +55,7 @@ const Modifier = () => {
         console.log("📦 Données envoyées pour update :", studentToEdit);
 
         try {
-            const response = await fetch(`http://localhost:5000/etudiants/${studentToEdit._id}`, {
+            const response = await fetch(`${API_URL}/etudiants/${studentToEdit._id}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(studentToEdit),

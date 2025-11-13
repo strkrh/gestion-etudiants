@@ -28,7 +28,7 @@ useEffect(() => {
             try {
                 // Correction: backend ne filtre pas directement sur profId par query param,
                 // donc on envoie une requête GET simple et on filtre côté frontend (ou backend à modifier)
-                const response = await fetch(`http://localhost:5000/etudiants?profId=${profId}`);
+                const response = await fetch(`${API_URL}/etudiants?profId=${profId}`);
 
                 if (!response.ok) throw new Error("Erreur lors du chargement des étudiants");
                 const data = await response.json();
@@ -54,7 +54,7 @@ const handleAddStudent = async () => {
         // 👇 Vérifie les données envoyées
         console.log("📤 Données envoyées :", { nom, prenom, email, niveau, domaine, profId });
 
-        const response = await fetch("http://localhost:5000/etudiants", {
+        const response = await fetch("${API_URL}/etudiants", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ nom, prenom, email, niveau, domaine, profId }),

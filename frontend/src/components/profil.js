@@ -20,7 +20,7 @@ const Profil = () => {
       }
 
       try {
-        const response = await fetch(`http://localhost:5000/prof/${profId}`);
+        const response = await fetch(`${API_URL}/prof/${profId}`);
         if (!response.ok) throw new Error("Erreur lors de la récupération du professeur");
 
         const data = await response.json();
@@ -50,7 +50,7 @@ const handleEditProfil = async () => {
   console.log("🚀 Données envoyées à l’API :", profilToEdit); // ← ICI
 
   try {
-    const response = await fetch(`http://localhost:5000/prof/${profilToEdit._id}`, {
+    const response = await fetch(`${API_URL}/prof/${profilToEdit._id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(profilToEdit),
@@ -74,7 +74,7 @@ const refreshProfile = async () => {
   if (!profId) return;
   
   try {
-    const response = await fetch(`http://localhost:5000/prof/${profId}`);
+    const response = await fetch(`${API_URL}/prof/${profId}`);
     if (response.ok) {
       const updatedData = await response.json();
       setUser(updatedData); // On met à jour le profil sans rechargement
